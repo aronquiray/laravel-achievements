@@ -105,6 +105,6 @@ class LoadAchievementsCommand extends Command
         if (preg_match('#^namespace\s+(.+?);$#sm', $src, $m)) {
             return $m[1];
         }
-        return null;
+        return 'App\Achievements';
     }
 }
